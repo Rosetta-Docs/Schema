@@ -23,6 +23,12 @@
     "array_depth": {
       "type": "integer"
     },
+    "primitive": {
+      "type": "boolean"
+    },
+    "wildcard": {
+      "type": "boolean"
+    },
     "bounds": {
       "type": "array",
       "items": {
