@@ -17,6 +17,12 @@
     "generic": {
       "type": "boolean"
     },
+    "array": {
+      "type": "boolean"
+    },
+    "array_depth": {
+      "type": "integer"
+    },
     "bounds": {
       "type": "array",
       "items": {
@@ -33,6 +39,7 @@
     }
   },
   "dependencies": {
+    "array": ["array_depth"],
     "bounds": ["bounds_type"]
   }
 }
