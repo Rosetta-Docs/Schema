@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema",
-    "$id": "https://raw.githubusercontent.com/Rosetta-Docs/Rosetta-Docs-Schema/refs/heads/1.1/1.1/1.1.json",
+    "$id": "1.1.json",
     "type": "object",
     "minProperties": 1,
     "additionalItems": true,
@@ -24,7 +24,7 @@
             "type": "object",
             "properties": {
                 "projectzomboid": {
-                    "$ref": "https://raw.githubusercontent.com/Rosetta-Docs/Rosetta-Docs-Schema/refs/heads/1.1/1.1/game/projectzomboid.json"
+                    "$ref": "1.1/game/projectzomboid.json"
                 }
             }
         },

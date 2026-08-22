@@ -1,5 +1,5 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Rosetta-Docs/Rosetta-Docs-Schema/refs/heads/1.1/1.1.json?p=2",
+    "$schema": "../1.1.json",
     "version": "1.1",
     "languages": {
         "lua": {
