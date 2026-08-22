@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema",
-    "$id": "https://raw.githubusercontent.com/Rosetta-Docs/Rosetta-Docs-Schema/refs/heads/1.1/1.1/java/constructor.json",
+    "$id": "java/constructor.json",
     "type": "object",
     "minItems": 1,
     "additionalProperties": false,

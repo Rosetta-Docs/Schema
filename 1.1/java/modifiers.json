@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema",
-    "$id": "https://raw.githubusercontent.com/Rosetta-Docs/Rosetta-Docs-Schema/refs/heads/1.1/1.1/java/modifiers.json",
+    "$id": "java/modifiers.json",
     "type": "array",
     "minItems": 1,
     "additionalItems": false,
