@@ -10,8 +10,8 @@
       "description": "A unique identifier for the file. This is used for references to dictionaries."
     },
     "version": {
-      "description": "The schema version for Rosetta. E.G: 1.2",
-      "type": "string"
+      "type": "string",
+      "description": "The schema version for Rosetta. E.G: 1.2"
     },
     "locale": {
       "type": "string",
@@ -23,10 +23,10 @@
       "minProperties": 1,
       "properties": {
         "java": {
-          "$ref": "1.2/java.json"
+          "$ref": "1.2/java.schema.json"
         },
         "lua": {
-          "$ref": "1.2/lua.json"
+          "$ref": "1.2/lua.schema.json"
         }
       }
     },
@@ -35,7 +35,7 @@
       "description": "All third-party schema definitions goes here."
     },
     "tags": {
-      "$ref": "1.2/tags.json"
+      "$ref": "1.2/tags.schema.json"
     }
   },
   "required": ["version", "id"]
