@@ -27,7 +27,14 @@
       "type": "array",
       "minItems": 1,
       "items": {
-        "$ref": "return.schema.json"
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "$ref": "return.schema.json"
+          }
+        ]
       }
     },
     "overloads": {

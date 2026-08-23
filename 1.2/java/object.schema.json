@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "class.schema.json",
+  "$id": "object.schema.json",
   "type": "object",
   "minProperties": 1,
   "additionalProperties": false,
@@ -17,6 +17,10 @@
       "type": "boolean",
       "description": "Default: False"
     },
+    "type": {
+      "type": "string",
+      "enum": ["class", "interface", "enum", "record"]
+    },
     "type_parameters": {
       "type": "array",
       "minItems": 1,
@@ -30,7 +34,7 @@
       "description": "If the class is deprecated."
     },
     "extends": {
-      "type": "object",
+      "description": "Default: \"java.lang.Object\"",
       "anyOf": [
         {
           "$ref": "type.schema.json"
@@ -55,7 +59,7 @@
     "classes": {
       "patternProperties": {
         "^": {
-          "$ref": "class.schema.json"
+          "$ref": "object.schema.json"
         }
       }
     },
@@ -88,5 +92,6 @@
     "tags": {
       "$ref": "../tags.schema.json"
     }
-  }
+  },
+  "required": ["type"]
 }
