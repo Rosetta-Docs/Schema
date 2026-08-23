@@ -1,19 +1,19 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "http://rosetta-docs.com/schema/1.2/java/return.json",
+  "$id": "type_parameter.schema.json",
   "type": "object",
   "additionalProperties": false,
   "minProperties": 1,
   "properties": {
-    "type": {
-      "$ref": "type_reference.json"
+    "name": {
+      "type": "string"
     },
-    "nullable": {
-      "type": "boolean"
+    "type": {
+      "$ref": "type_reference.schema.json"
     },
     "notes": {
       "type": "string"
     }
   },
-  "required": ["type"]
+  "required": ["name", "type"]
 }

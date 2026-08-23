@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "http://rosetta-docs.com/schema/1.2/lua/callback.json",
+  "$id": "callback.schema.json",
   "type": "object",
   "minItems": 1,
   "additionalProperties": false,
@@ -10,7 +10,7 @@
       "minItems": 1,
       "additionalItems": false,
       "items": {
-        "$ref": "parameter.json"
+        "$ref": "parameter.schema.json"
       }
     },
     "return": {
@@ -22,7 +22,7 @@
             "type": "string"
           },
           {
-            "$ref": "return.json"
+            "$ref": "return.schema.json"
           }
         ]
       }
@@ -31,7 +31,7 @@
       "type": "string"
     },
     "tags": {
-      "$ref": "../tags.json"
+      "$ref": "../tags.schema.json"
     }
   }
 }

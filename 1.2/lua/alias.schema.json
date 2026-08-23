@@ -1,19 +1,15 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "http://rosetta-docs.com/schema/1.2/lua/generic.json",
+  "$id": "alias.schema.json",
   "type": "object",
   "minItems": 1,
   "additionalProperties": false,
   "properties": {
-    "name": {
+    "type": {
       "type": "string"
     },
-    "extends": {
+    "notes": {
       "type": "string"
-    },
-    "tags": {
-      "$ref": "../tags.json"
     }
-  },
-  "required": ["name"]
+  }
 }

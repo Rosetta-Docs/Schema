@@ -1,10 +1,10 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema",
-  "$id": "http://rosetta-docs.com/schema/1.2/java/type_reference.json",
+  "$id": "type_reference.schema.json",
   "description": "A reference to a fully-qualified Java Type definition. This can be a simplified reference, a full reference object, or a reference to a type-dictionary.",
   "oneOf": [
     {
-      "$ref": "type.json"
+      "$ref": "type.schema.json"
     },
     {
       "type": "string"

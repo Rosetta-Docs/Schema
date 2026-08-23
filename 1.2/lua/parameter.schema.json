@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "http://rosetta-docs.com/schema/1.2/lua/parameter.json",
+  "$id": "parameter.schema.json",
   "type": "object",
   "minItems": 1,
   "additionalProperties": false,

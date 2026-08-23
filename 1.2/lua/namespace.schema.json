@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "http://rosetta-docs.com/schema/1.2/lua/namespace.json",
+  "$id": "namespace.schema.json",
   "type": "object",
   "additionalItems": false,
   "properties": {
@@ -9,7 +9,7 @@
       "minProperties": 1,
       "patternProperties": {
         "^": {
-          "$ref": "namespace.json"
+          "$ref": "namespace.schema.json"
         }
       }
     },
@@ -21,7 +21,7 @@
           "type": "array",
           "minItems": 1,
           "items": {
-            "$ref": "alias.json"
+            "$ref": "alias.schema.json"
           }
         }
       }
@@ -32,7 +32,7 @@
       "additionalProperties": false,
       "patternProperties": {
         "^": {
-          "$ref": "class.json"
+          "$ref": "class.schema.json"
         }
       }
     },
@@ -42,7 +42,7 @@
       "additionalProperties": false,
       "patternProperties": {
         "^": {
-          "$ref": "table.json"
+          "$ref": "table.schema.json"
         }
       }
     },
@@ -51,7 +51,7 @@
       "minItems": 1,
       "additionalItems": false,
       "items": {
-        "$ref": "function.json"
+        "$ref": "function.schema.json"
       }
     },
     "fields": {
@@ -60,7 +60,7 @@
       "additionalProperties": false,
       "patternProperties": {
         "^": {
-          "$ref": "field.json"
+          "$ref": "field.schema.json"
         }
       }
     },
@@ -68,7 +68,7 @@
       "type": "string"
     },
     "tags": {
-      "$ref": "../tags.json"
+      "$ref": "../tags.schema.json"
     }
   }
 }

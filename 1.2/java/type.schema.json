@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "http://rosetta-docs.com/schema/1.2/java/type.json",
+  "$id": "type.schema.json",
   "type": "object",
   "additionalProperties": false,
   "minProperties": 1,
@@ -32,7 +32,7 @@
     "bounds": {
       "type": "array",
       "items": {
-        "anyOf": [{ "$ref": "type_reference.json" }]
+        "anyOf": [{ "$ref": "type_reference.schema.json" }]
       }
     },
     "bounds_type": {
@@ -40,7 +40,7 @@
       "enum": ["extends", "super"]
     },
     "parameters": {
-      "$ref": "generics.json",
+      "$ref": "generics.schema.json",
       "description": "Required for generic sub-type parameters. For List<String>, \"base\" would be \"List\" and generics would be [{\"base\": \"String\"}]"
     }
   },

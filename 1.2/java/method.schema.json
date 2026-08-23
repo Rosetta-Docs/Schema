@@ -1,54 +1,53 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "http://rosetta-docs.com/schema/1.2/lua/method.json",
+  "$id": "method.schema.json",
   "type": "object",
-  "minItems": 1,
   "additionalProperties": false,
+  "minProperties": 1,
   "properties": {
     "name": {
       "type": "string"
+    },
+    "scope": {
+      "type": "string",
+      "enum": ["public", "package", "protected", "private"]
     },
     "static": {
       "type": "boolean",
       "description": "Default: False"
     },
+    "final": {
+      "type": "boolean",
+      "description": "Default: False"
+    },
     "deprecated": {
       "type": ["boolean", "string"],
-      "description": "If the function is deprecated."
+      "description": "If the method is deprecated."
     },
     "parameters": {
       "type": "array",
       "minItems": 1,
+      "additionalItems": false,
       "items": {
-        "$ref": "parameter.json"
+        "$ref": "parameter.schema.json"
+      }
+    },
+    "type_parameters": {
+      "type": "array",
+      "minItems": 1,
+      "additionalItems": false,
+      "items": {
+        "$ref": "type_parameter.schema.json"
       }
     },
     "return": {
-      "type": "array",
-      "minItems": 1,
-      "items": {
-        "$ref": "return.json"
-      }
-    },
-    "overloads": {
-      "type": "array",
-      "minItems": 1,
-      "items": {
-        "$ref": "overload.json"
-      }
-    },
-    "generics": {
-      "type": "array",
-      "minItems": 1,
-      "items": {
-        "$ref": "generic.json"
-      }
+      "$ref": "return.schema.json"
     },
     "notes": {
       "type": "string"
     },
     "tags": {
-      "$ref": "../tags.json"
+      "$ref": "../tags.schema.json"
     }
   },
   "required": ["name"]

@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "http://rosetta-docs.com/schema/1.2/java.json",
+  "$id": "java.schema.json",
   "type": "object",
   "additionalProperties": false,
   "minProperties": 1,
@@ -10,7 +10,7 @@
       "minProperties": 1,
       "patternProperties": {
         "^": {
-          "$ref": "java/package.json"
+          "$ref": "java/package.schema.json"
         }
       }
     },
@@ -24,7 +24,7 @@
             "^": {
               "anyOf": [
                 {
-                  "$ref": "java/type.json"
+                  "$ref": "java/type.schema.json"
                 },
                 {
                   "type": "string"
@@ -39,7 +39,7 @@
           "items": {
             "anyOf": [
               {
-                "$ref": "java/type.json"
+                "$ref": "java/type.schema.json"
               },
               {
                 "type": "string"

@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "http://rosetta-docs.com/schema/1.2/java/field.json",
+  "$id": "field.schema.json",
   "type": "object",
   "minProperties": 1,
   "additionalProperties": false,
@@ -33,7 +33,7 @@
       "description": "Default: False"
     },
     "type": {
-      "$ref": "type_reference.json"
+      "$ref": "type_reference.schema.json"
     },
     "nullable": {
       "type": "boolean"
@@ -45,7 +45,7 @@
       "type": "string"
     },
     "tags": {
-      "$ref": "../tags.json"
+      "$ref": "../tags.schema.json"
     }
   },
   "required": ["name", "type"]
