@@ -1,7 +1,8 @@
-## Legacy Rosetta Version 1.1 For Project Zomboid Typing Libraries 
+## Rosetta-Docs Version 1.2
 
 ```json
 {
-    "$schema": "https://rosetta-docs.com/schema/1.1.schema.json"
+  "$schema": "https://rosetta-docs.com/schema/1.2.schema.json",
+  "version": "1.2"
 }
 ```

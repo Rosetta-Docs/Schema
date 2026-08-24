@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "1.2.schema.json",
+  "type": "object",
+  "minProperties": 1,
+  "additionalItems": true,
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "A unique identifier for the file. This is used for references to dictionaries."
+    },
+    "version": {
+      "type": "string",
+      "description": "The schema version for Rosetta. E.G: 1.2"
+    },
+    "locale": {
+      "type": "string",
+      "description": "The language locale to identify the language used for documentation. (Default: EN_US)",
+      "default": "EN_US"
+    },
+    "languages": {
+      "$ref": "1.2/languages.schema.json"
+    },
+    "modules": {
+      "$ref": "1.2/modules.schema.json"
+    },
+    "tags": {
+      "$ref": "1.2/tags.schema.json"
+    }
+  },
+  "required": ["version", "id"]
+}
