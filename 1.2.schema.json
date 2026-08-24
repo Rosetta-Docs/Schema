@@ -19,20 +19,10 @@
       "default": "EN_US"
     },
     "languages": {
-      "type": "object",
-      "minProperties": 1,
-      "properties": {
-        "java": {
-          "$ref": "1.2/java.schema.json"
-        },
-        "lua": {
-          "$ref": "1.2/lua.schema.json"
-        }
-      }
+      "$ref": "1.2/languages.schema.json"
     },
-    "applications": {
-      "type": "object",
-      "description": "All third-party schema definitions goes here."
+    "modules": {
+      "$ref": "1.2/modules.schema.json"
     },
     "tags": {
       "$ref": "1.2/tags.schema.json"
