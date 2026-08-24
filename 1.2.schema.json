@@ -18,12 +18,6 @@
       "description": "The language locale to identify the language used for documentation. (Default: EN_US)",
       "default": "EN_US"
     },
-    "languages": {
-      "$ref": "1.2/languages.schema.json"
-    },
-    "modules": {
-      "$ref": "1.2/modules.schema.json"
-    },
     "tags": {
       "$ref": "1.2/tags.schema.json"
     }
