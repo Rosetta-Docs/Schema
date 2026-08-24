@@ -17,7 +17,7 @@
 ### Legacy
 ```json
 {
-  "$schema": "https://schema.rosetta-docs.com/1.1",
+  "$schema": "https://schema.rosetta-docs.com/1.1"
 }
 ```
 
