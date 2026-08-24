@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "return.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "type": {
+      "$ref": "type.schema.json"
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "required": ["type"]
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "event.schema.json",
+  "type": "object",
+  "minItems": 1,
+  "additionalProperties": false,
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "deprecated": {
+      "type": "boolean",
+      "description": "If the event is deprecated."
+    },
+    "callback": {
+      "$ref": "../../lua/callback.schema.json"
+    },
+    "context": {
+      "$ref": "context.schema.json"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "tags": {
+      "$ref": "../../tags.schema.json"
+    }
+  }
+}

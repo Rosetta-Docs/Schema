@@ -1,0 +1,70 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "class.schema.json",
+  "type": "object",
+  "minItems": 1,
+  "additionalProperties": false,
+  "properties": {
+    "generics": {
+      "$ref": "generics.schema.json"
+    },
+    "deprecated": {
+      "type": "boolean",
+      "description": "If the class is deprecated."
+    },
+    "javaType": {
+      "type": "string"
+    },
+    "extends": {
+      "type": "string"
+    },
+    "staticFields": {
+      "type": "object",
+      "minItems": 1,
+      "patternProperties": {
+        "^": {
+          "$ref": "field.schema.json"
+        }
+      }
+    },
+    "fields": {
+      "type": "object",
+      "minItems": 1,
+      "patternProperties": {
+        "^": {
+          "$ref": "field.schema.json"
+        }
+      }
+    },
+    "constructors": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "constructor.schema.json"
+      }
+    },
+    "methods": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "method.schema.json"
+      }
+    },
+    "staticMethods": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "method.schema.json"
+      }
+    },
+    "modifiers": {
+      "$ref": "modifiers.schema.json"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "tags": {
+      "$ref": "../tags.schema.json"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "field.schema.json",
+  "type": "object",
+  "minItems": 1,
+  "additionalProperties": false,
+  "properties": {
+    "type": {
+      "type": "string"
+    },
+    "nullable": {
+      "description": "Appends the 'nil' type to the list of optional types.",
+      "type": "boolean"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "defaultValue": {
+      "type": "string"
+    },
+    "tags": {
+      "$ref": "../tags.schema.json"
+    }
+  }
+}

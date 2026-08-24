@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "type.schema.json",
+  "type": "object",
+  "minItems": 1,
+  "additionalProperties": false,
+  "properties": {
+    "basic": {
+      "type": "string"
+    },
+    "full": {
+      "type": "string"
+    },
+    "nullable": {
+      "description": "Appends the 'null' type to the list of optional types.",
+      "type": "boolean"
+    },
+    "generics": {
+      "$ref": "generics.schema.json"
+    }
+  }
+}
